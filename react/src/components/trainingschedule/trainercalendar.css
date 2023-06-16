@@ -1,0 +1,10 @@
+.training-calendar-head{
+    color : purple;
+    font-weight: 800;
+}
+.calendar-delete-button{
+    margin-right: 8px
+}
+.calendar-update-button{
+    margin-right: 5px
+}

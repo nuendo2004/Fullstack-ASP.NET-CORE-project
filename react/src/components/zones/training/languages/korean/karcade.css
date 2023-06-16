@@ -1,0 +1,1117 @@
+/* K-Arcade Menu */
+.kr-menu-container {
+  min-width: 85vw;
+  height: 40vw;
+  outline: .2rem solid rgba(0, 0, 0, 0.5);
+  outline-offset: -.2rem;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.75), 
+                                    rgba(0, 0, 0, 0.75));
+  border-radius: 2rem;
+}
+
+.kr-menu-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  border: .25rem double rgb(140, 140, 140);
+  outline: .25rem double rgb(40, 40, 40);
+  outline-offset: -.5rem;
+  box-shadow: 
+    0 0 .35rem rgba(0, 0, 0, .5),
+    0 0 .15rem rgba(0, 0, 0, .15),
+    0 0 .1rem rgba(0, 0, 0, .15);
+  background-image: radial-gradient(rgba(232, 102, 16, 0.75), 
+                                    rgba(59, 11, 232, .75));
+}
+
+  /* K-Arcarde Menu - Header */
+  .kr-menu-card__header {
+    width: 100%;
+    height: 10%;
+    border-bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .kr-menu-card__header-row {
+    font-size: clamp(.5rem, 2.5rem, 2vw);
+    font-weight: bold;
+    -webkit-text-fill-color: white;
+    font-family:'Gill Sans', sans-serif;
+    height:100%;
+  }
+
+  .kr-menu-card__header-col-user {
+    overflow: hidden;
+    max-width: 40%;
+    height: 100%;
+  }
+
+    .kr-menu-user-icon {
+      height: 100%;
+      width: 10%;
+      color: white;
+    }
+
+  .kr-menu-card__header-col-misc {
+    overflow: hidden;
+    height: 100%;
+  }
+
+    .kr-menu-karcade-logo {
+      height: 90%;
+    }
+
+  .kr-menu-card__header-col-settings {
+    height: 100%;
+    max-width: 25%;
+    overflow: hidden;
+  }
+
+    .kr-menu-settings-btn {
+      font-size: 1em;
+      background-color: rgba(0,0,0,0);
+      border: 0;
+      width: 10%;
+      height: 100%;
+    }
+
+    .kr-menu-settings-btn:hover {
+      background-color: rgba(0,0,0,0) !important;
+    }
+
+    .kr-menu-settings-btn:active {
+      background-color: rgba(0,0,0,0) !important;
+    }
+
+    .kr-menu-settings-btn:focus {
+      background-color: rgba(0,0,0,0) !important;
+    }
+
+      .kr-menu-settings-icon {
+        overflow: visible;
+        height: 100%;
+        width: 100%;
+      }
+
+      .kr-menu-settings-icon:hover {
+        background-color: rgba(0,0,0,0);
+        color: rgb(255,120,0);
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+        animation-delay: -0;
+        animation-name: rotate360menu;
+      }
+
+      .kr-menu-settings-btn:active {
+        background-color: rgba(0,0,0,0);
+        color: rgb(255,120,0);
+      }
+
+      @keyframes rotate360menu {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(1080deg);
+        }
+      }
+
+  /* K-Arcade Menu - Body */
+  .kr-menu-card__body {
+    width: 100%;
+    height: 90%;
+  }
+
+  .kr-menu-card__body-row {
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+  }
+
+  .kr-menu-card__body-col {
+    width: 60%;
+    height: 100%;
+    flex-direction: row;
+    border-radius: .5rem;
+    outline: .5rem double rgba(255, 255, 255, .25);
+  }
+
+    /* K-Arcade Menu - Body - Option Magpie */
+    .kr-menu-card__body-col__mag {
+      background: no-repeat center 
+                  url("https://sabio-training.s3-us-west-2.amazonaws.com/immerseddbe2420f-cd3e-4f2a-a4f0-2d38baec409b/KArcadeMenuColMag.jpg");
+      border-right-color: rgba(255,255,255,.25);
+      border-right-width: .25rem;
+      border-right-style: double;
+      border-bottom-left-radius: .5rem;
+      border-top-left-radius: .5rem;
+    }
+
+    .kr-menu-card__body-col__mag:hover {
+      outline: .25rem solid white;
+      z-index: 1;
+    }
+
+    .kr-menu-card__body__mag-top {
+      height: 54%;
+      align-items: flex-end;
+      overflow: hidden;
+    }
+
+      .kr-menu-card__body-mag {
+        position: relative;
+        top: 12rem;
+        opacity: 50%;
+        height: 100%;
+        width: 25%;
+      }
+
+      .kr-menu-card__body-mag:hover {
+        cursor: pointer;
+      }
+
+    .kr-menu-card__body__mag-bot {
+      height: 45%;
+    }
+
+    .kr-menu-card__body__mag-bot > h1 {
+      font-size: 2.75rem;
+      padding-top: 15rem;
+    }
+
+    /* K-Arcade Menu - Body - Option Tiger */
+    .kr-menu-card__body-col__tig {
+      background: no-repeat center 
+                  url("https://sabio-training.s3-us-west-2.amazonaws.com/immersed94978391-cb76-425d-ac8f-ff08cba73ed9/KArcadeMenuColTig.jpg");
+      border-left-color: rgba(255,255,255,.25);
+      border-left-width: .25rem;
+      border-left-style: double;
+      border-bottom-right-radius: .5rem;
+      border-top-right-radius: .5rem;
+    }
+
+    .kr-menu-card__body-col__tig:hover {
+      outline: .25rem solid white;
+      z-index: 1;
+    }
+
+    .kr-menu-card__body__tig-top { 
+      height: 45.5%;
+      align-items: flex-end;
+      overflow: hidden;
+    }
+
+      .kr-menu-card__body-tig {
+        position: relative;
+        top: 9.5rem;
+        opacity: 50%;
+        height: 100%;
+        width: 25%;
+      }
+
+      .kr-menu-card__body-tig:hover {
+        cursor: pointer;
+      }
+
+    .kr-menu-card__body__tig-bot {  
+      height: 54.5%;
+    }
+
+    .kr-menu-card__body__tig-bot > h1 {
+      font-size: 3rem;
+      padding-top: 18.5rem;
+    }
+
+    /* K-Arcade Menu - Body - Nav Options */
+    .kr-menu-card__body-col-x {
+      max-width: 18vw;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .kr-menu-card__body-col-x__row-city-view { 
+      height: 30%;
+      font-size: 2em;
+      width: calc(100% * .85);
+      border-radius: calc(1rem - 2px);
+      background: no-repeat center 
+                  url("https://sabio-training.s3-us-west-2.amazonaws.com/immersed69ac6858-777f-423e-b3b5-7878f89af84c/Cityview.jpg"),
+                  linear-gradient(rgba(0,0,0,.5), 
+                                  rgba(0,0,0,.5));
+      background-size: 100% 105%;
+      background-blend-mode: overlay;
+      outline: .35rem double rgba(255,255,255,.25);
+    }
+
+    .kr-menu-city-btn {
+      background-color: rgba(0,0,0,0);
+      border: 0;
+    }
+
+    .kr-menu-city-btn:hover {
+      background-color: rgba(255,255,255,.15);
+      font-weight: bolder;
+      border: .5em solid white;
+      border-radius: calc(1rem - 2px);
+    }
+
+    .kr-menu-card__body-col-x__row-academy {
+      height: 30%;
+      font-size: 2em;
+      width: calc(100% * .85);
+      border-radius: calc(1rem - 2px);
+      background: no-repeat center 
+                  url("https://sabio-training.s3-us-west-2.amazonaws.com/immersed0f057688-f989-4f34-99f9-763953b145c2/KArcade_Academy_Classroom.jpg"),
+                  linear-gradient(rgba(0,0,0,.5), 
+                                  rgba(0,0,0,.5));
+      background-size: 110% 100%;
+      background-blend-mode: overlay;
+      outline: .35rem double rgba(255,255,255,.25);
+    }
+
+    .kr-menu-academy-btn {
+      background-color: rgba(0,0,0,0);
+      border: 0;
+    }
+
+    .kr-menu-academy-btn:hover {
+      background-color: rgba(255,255,255,.15);
+      font-weight: bolder;
+      border: .5em solid white;
+      border-radius: calc(1rem - 2px);
+    }
+
+    .kr-menu-card__body-col-x__row-collection {
+      height: 30%;
+      font-size: 2em;
+      width: calc(100% * .85);
+      border-radius: calc(1rem - 2px);
+      background: no-repeat center 
+                  url("https://sabio-training.s3-us-west-2.amazonaws.com/immersed36bb1fa5-8624-4841-b88d-e1c4a44f7c80/KArcadeCollection.jpg"),
+                  linear-gradient(rgba(0,0,0,.5), 
+                                  rgba(0,0,0,.5));
+      background-size: 100% 100%;
+      background-blend-mode: overlay;
+      outline: .35rem double rgba(255,255,255,.25);
+    }
+
+    .kr-menu-collection-btn {
+      background-color: rgba(0,0,0,0);
+      border: 0;
+    }
+
+    .kr-menu-collection-btn:hover {
+      background-color: rgba(255,255,255,.15);
+      font-weight: bolder;
+      border: .5em solid white;
+      border-radius: calc(1rem - 2px);
+    }
+
+/* K-Arcade Main */
+.kr-main-container {
+  min-width: 85vw;
+  height: 45vw;
+  outline: .2rem solid rgba(0, 0, 0, 0.5);
+  outline-offset: -.2rem;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.75), 
+  rgba(0, 0, 0, 0.75));
+  border-radius: 2rem;
+}
+
+.kr-main-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  border: .25rem double rgb(140, 140, 140);
+  outline: .25rem double rgb(40, 40, 40);
+  outline-offset: -.5rem;
+  box-shadow: 
+    0 0 .35rem rgba(0, 0, 0, .5),
+    0 0 .15rem rgba(0, 0, 0, .15),
+    0 0 .1rem rgba(0, 0, 0, .15);
+  background-image: radial-gradient(rgba(232, 102, 16, 0.75), 
+                                    rgba(59, 11, 232, .75));
+}
+
+  /* K-Arcade Main - Header*/
+  .kr-main-card__header {
+    width: 100%;
+    height: 10%;
+    border-bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .kr-main-card__header-row {
+    font-size: clamp(.5rem, 2em, 2vw);
+    font-weight: bold;
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    font-family:'Gill Sans', sans-serif;
+    height: 100%;
+  }
+
+  .kr-main-card__header-col-back {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    max-width: 25%;
+  }
+
+    .kr-main-back-btn {
+      font-size: 1em;
+      font-family: 'Gill Sans', sans-serif;
+      -webkit-text-fill-color: white;
+      background-color: rgba(0,0,0,0);
+      border: 0;
+      width: 35%;
+      height: 100%;
+    }
+
+    .kr-main-back-btn:hover {
+      background-color: rgba(0,0,0,0);
+      -webkit-text-fill-color: rgb(255, 120, 0);
+      color: rgb(255,120,0);
+      transform:translateX(-.25em);
+      transition: all .2s ease-in-out;
+    }
+
+      .kr-main-back-icon {
+        height: 50%;
+        width: 50%;
+      }
+
+  .kr-main-card__header-col-logo {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 50%;
+  }
+
+    .kr-main-btn--logo {
+      height: 100%;
+      width: 25%;
+      background-color: rgba(0,0,0,0) !important;
+      border: 0;
+    }
+
+    .kr-main-btn--logo:hover {
+      background-color: rgba(0,0,0,0) !important;
+    }
+
+      .kr-main-karcade-logo {
+        height: 100%;
+      }
+
+      .kr-main-karcade-logo:hover {
+        cursor: pointer;
+      }
+
+      .kr-main-karcade-logo-hover {
+        height: 100%;
+        display: inline;
+        left: 37.555%;
+        top: 0;
+        position: absolute;
+      }
+
+  .kr-main-card__header-col-settings {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    max-width: 25%;
+  }
+
+    .kr-main-settings-btn {
+      font-size: 1em;
+      background-color: rgba(0,0,0,0);
+      border: 0;
+      width: 22%;
+      height: 100%;
+    }
+
+    .kr-main-settings-btn:hover {
+      background-color: rgba(0,0,0,0) !important;
+    }
+
+    .kr-main-settings-btn:active {
+      background-color: rgba(0,0,0,0) !important;
+    }
+
+      .kr-main-settings-icon {
+        height: 100%;
+        width: 40%;
+      }
+
+      .kr-main-settings-icon:hover {
+        background-color: rgba(0,0,0,0) !important;
+        color: rgb(255,120,0);
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+        animation-delay: -0;
+        animation-name: rotate360;
+      }
+
+      .kr-main-settings-icon:active {
+        background-color: rgba(0,0,0,0) !important;
+      }
+
+      @keyframes rotate360 {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(1080deg);
+        }
+      }
+
+  /* K-Arcade Main - Body */
+  .kr-main-card__body {
+    width: 100%;
+    height: 90%;
+  }
+
+  .kr-main-card__body-col {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    outline: .5rem double rgba(255, 255, 255, 0.35);
+    overflow: hidden;
+  }
+
+  .kr-main-card__body-row__top {
+    width: 100%;
+    height: 60%;
+    border: 1px dotted black;
+    justify-content: space-evenly;
+  }
+
+  .kr-main-card__body-row__bottom {
+    width: 100%;
+    height: 40%;
+    border: 1px dotted black;
+    justify-content: space-evenly;
+  }
+
+/* K-Arcade - Academy Hall */
+.kr-academyhall-card {
+  height: 100%;
+  width: 100%;
+}
+
+.kr-academyhall-card-body {
+  flex-direction: row;
+  background: no-repeat center 
+              url("https://sabio-training.s3-us-west-2.amazonaws.com/immersedf496eb47-4a67-41b1-b82a-7777cb846815/KArcadeAcademyHall.jpg");
+  background-size: 100% 101%;
+}
+
+  /* K-Arcade - Academy Hall - Left Column */
+  .kr-academyhall-card__col-left {
+    max-width: 25.25%;
+    height: 100%;
+  }
+
+  /* K-Arcade - Academy Hall - Middle Column */
+  .kr-academyhall-card__col-options {
+    width: 60%;
+    height: 100%;
+  }
+
+  .kr-academyhall-card__col-options__cl-row-a {
+    height: 10%;
+  }
+
+  .kr-academyhall-card__col-options__cl-row-b {
+    height: 15%;
+  }
+
+  .kr-academyhall-card__col-options__cl-row-c {
+    height: 28.5%;
+  }
+
+  .kr-academyhall-card__col-options__cr-row-a {
+    height: 10%;
+  }
+
+  .kr-academyhall-card__col-options__cr-row-b {
+    height: 15%;
+  }
+
+  .kr-academyhall-card__col-options__cr-row-c {
+    height: 28.5%;
+  }
+
+  /* K-Arcade - Academy Hall - Right Column */
+  .kr-academyhall-card__col-right {
+    max-width: 25.25%;
+    height: 100%;
+  }
+
+    /* K-Arcade - Academy Hall - Buttons */
+    #krAcademyHallBtnAL {
+      background-color: rgba(0,0,0,.1);
+      width: 40%;
+      height: 95%;
+      clip-path: polygon(29% 0, 100% 0, 100% 100%, 0 110%);
+      border: 0;
+      font-size: clamp(.5rem, 1em, 1rem);
+    }
+
+    #krAcademyHallBtnAL:hover {
+      background-color: rgba(255,255,255,.5);
+      -webkit-text-fill-color: rgb(72, 72, 255);
+      border: .2em solid rgb(72, 72, 255);
+      border-left: 0;
+      border-right-width: .4em;
+    }
+
+    #krAcademyHallBtnBL {
+      background-color: rgba(0,0,0,.1);
+      width: 60%;
+      height: 96%;
+      clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 110%);
+      border: 0;
+      font-size: clamp(.5rem, 1.5em, 1.5rem);
+    }
+
+    #krAcademyHallBtnBL:hover {
+      background-color: rgba(255,255,255,.5);
+      -webkit-text-fill-color: rgb(72, 72, 255);
+      border: .25em solid rgb(72, 72, 255);
+      border-left: 0;
+      border-right-width: .5em;
+    }
+
+    #krAcademyHallBtnCL {
+      background-color: rgba(0,0,0,.1);
+      width: 100%;
+      height: 94%;
+      clip-path: polygon(31% 0, 100% 0, 100% 100%, 0 101%);
+      border: 0;
+      font-size: clamp(.5rem, 2em, 2rem);
+    }
+
+    #krAcademyHallBtnCL:hover {
+      background-color: rgba(255,255,255,.5);
+      -webkit-text-fill-color: rgb(72, 72, 255);
+      border: .3em solid rgb(72, 72, 255);
+      border-left: 0;
+      border-right-width: .6em;
+    }
+
+    #krAcademyHallBtnAR {
+      background-color: rgba(0,0,0,.1);
+      width: 41%;
+      height: 95%;
+      clip-path: polygon(0 0, 69% 0, 95% 100%, 0 100%);
+      border: 0;
+      font-size: clamp(.5rem, 1em, 1rem);
+    }
+
+    #krAcademyHallBtnAR:hover {
+      background-color: rgba(255,255,255,.5);
+      -webkit-text-fill-color: rgb(72, 72, 255);
+      border: .2em solid rgb(72, 72, 255);
+      border-right: 0;
+      border-left-width: .4em;
+    }
+
+    #krAcademyHallBtnBR {
+      background-color: rgba(0,0,0,.1);
+      width: 59%;
+      height: 96%;
+      clip-path: polygon(0 0, 72% 0, 99% 100%, 0 100%);
+      border: 0;
+      font-size: clamp(.5rem, 1.5em, 1.5rem);
+    }
+
+    #krAcademyHallBtnBR:hover {
+      background-color: rgba(255,255,255,.5);
+      -webkit-text-fill-color: rgb(72, 72, 255);
+      border: .25em solid rgb(72, 72, 255);
+      border-right: 0;
+      border-left-width: .5em;
+    }
+
+    #krAcademyHallBtnCR {
+      background-color: rgba(0,0,0,.1);
+      width: 100%;
+      height: 94%;
+      clip-path: polygon(0 0, 69% 0, 100% 100%, 0 100%);
+      border: 0;
+      font-size: clamp(.5rem, 2em, 2rem);
+    }
+
+    #krAcademyHallBtnCR:hover {
+      background-color: rgba(255,255,255,.5);
+      -webkit-text-fill-color: rgb(72, 72, 255);
+      border: .3em solid rgb(72, 72, 255);
+      border-right: 0;
+      border-left-width: .6em;
+    }
+
+/* K-Arcade - Academy */
+.kr-academy-card {
+  height: 100%;
+  width: 100%;
+}
+
+.kr-academy-card__body {
+  flex-direction: row;
+  background: no-repeat center 
+              url("https://sabio-training.s3-us-west-2.amazonaws.com/immersed0f057688-f989-4f34-99f9-763953b145c2/KArcade_Academy_Classroom.jpg");
+  background-size: 105% 101%;
+}
+
+.kr-academy-card__body-col {
+  height: 100%;
+  width: 100%;
+}
+
+.kr-academy-card__body-row {
+  height: 50%;
+  width: 100%;
+}
+
+.kr-academy-card__body-row__col {
+  height: 80%;
+  max-width: calc(50% - .5rem);
+}
+
+.kr-academy-card__body-row__col-header {
+  height: 15%;
+  font-size: 2em;
+  font-family: Verdana,sans-serif;
+}
+
+.kr-academy-card__body-row__col-body {
+  height: 125%;
+}
+
+  /* K-Arcade - Academy - Carousel */
+  .krNumber-slider {
+    height: 60%;
+    width: 80%;
+    display: block;
+    justify-content: center;
+  }
+
+  .krNumber-slider > svg {
+    background-color: rgba(0,0,0,0) !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .krNumber-slider > svg:hover {
+    background-color: rgba(0,0,0,0) !important;
+    width: 5% !important;
+    height: 200% !important;
+    fill: rgb(72,72,255);
+    transition: 0s;
+  }
+
+  .kr-slide-audio-icon {
+    margin-top: 1.75em;
+    height: 9%;
+    width: 9%;
+    overflow: visible;
+  }
+
+  .kr-slide-audio-icon:hover {
+    fill: rgb(72,72,255);
+    animation-name: rotateAudio;
+    animation-iteration-count: infinite;
+    animation-duration: 2.25s;
+    animation-delay: 0;
+  }
+
+    @keyframes rotateAudio {
+      25% {
+        transform: rotate(-10deg);
+      }
+      50% {
+        transform: rotate(20deg);
+      }
+      75% {
+        transform: rotate(-10deg);
+      }
+      100% {
+        transform: rotate(0);
+      }
+    }
+
+    /* K-Arcade - Academy - Slide - mapSino */
+    .krSino-slide-card {
+      height: 80%;
+      width: 100%;
+      background-color: rgba(0,0,0,0);
+      box-shadow: 0 0 0 rgba(0,0,0,0);
+      border: 0;
+    }
+
+    .krSino-slide-body {
+      background-color: rgba(0,0,0,0);
+      font-size: 9em;
+      height: 100%;
+    }
+
+    .krSino-slide-footer {
+      font-size: 2em;
+    }
+
+    .krSino-slide-footer {
+      border: 0;
+      background-color: rgba(0,0,0,0);
+    }
+
+    .krSino-slide-img {
+      height: 100%;
+      background-color: rgba(0,0,0,0);
+    }
+
+    /* K-Arcade - Academy - Slide - mapNative */
+    .krNative-slide-card {
+      height: 80%;
+      width: 100%;
+      background-color: rgba(0,0,0,0);
+      box-shadow: 0 0 0 rgba(0,0,0,0);
+      border: 0;
+    }
+
+    .krNative-slide-body {
+      background-color: rgba(0,0,0,0);
+      font-size: 9em;
+      height: 100%;
+    }
+
+    .krNative-slide-footer {
+      font-size: 2em;
+    }
+
+    .krNative-slide-footer {
+      border: 0;
+      background-color: rgba(0,0,0,0);
+    }
+
+    .krNative-slide-img {
+      background-color: rgba(0,0,0,0);
+    }
+  
+
+  .kr-academy-card__body-row__col--bottom {
+    height: 90%;
+    align-items: flex-end;
+    overflow-y: hidden;
+  }
+
+    .kr-academy-card__body-row__col--bottom-row {
+      justify-content: flex-end;
+    }
+
+      .kr-academy-card--task-card {
+        height: 40%;
+        width: 60%;
+        background-image: linear-gradient(to top, 
+                        rgba(127, 60, 175, .5), 
+                        rgba(255, 255, 255, .75),
+                        rgb(84, 23, 133));
+        clip-path: polygon(0 0, 0 0, 90% 0, 90% 90%, 100% 100%, 10% 90%, 10% 0);
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+        .kr-academy-card--task-card-header {
+          background-color: rgba(0,0,0,0);
+          border: 0;
+          border-bottom: .25rem inset rgba(0,0,0,.25);
+        }
+
+        .kr-academy-card--task-card-body > button {
+          font-size: 1rem;
+        }
+
+        .kr-academy-card--task-card-body > button:hover {
+          background-color: rgb(255, 80, 0);
+          -webkit-text-fill-color: white;
+        }
+
+      #academyCompanion {
+        top: 5rem;
+        right: 1rem;
+        width: 35%;
+        overflow: hidden;
+        opacity: 15%;
+        position: relative;
+      }
+
+      #academyCompanion:hover {
+        cursor: pointer;
+      }
+
+/* K-Arcade - City View */
+.kr-city-card__body {
+  flex-direction: row;
+  background: no-repeat center 
+              url("https://sabio-training.s3-us-west-2.amazonaws.com/immersed69ac6858-777f-423e-b3b5-7878f89af84c/Cityview.jpg");
+  background-size: 100% 102%;
+}
+
+.kr-city-card__body-row__col-1 {
+  flex-direction: column;
+  margin-left: 1.5vw;
+  max-width: 20%;
+  /* border: 1px dashed red; */
+}
+
+  .kr-city-card__body-arcade-row {
+    height: 30%;
+  }
+
+    #krCityArcadeBtn {
+      height: 100%;
+      border-radius: 1rem;
+      border: .25rem double rgb(0, 145, 255);
+      background-color: rgba(0,0,0,.25);
+    }
+
+    #krCityArcadeBtn:hover {
+      border-color: white;
+      background-color: rgba(255,255,255,.15);
+      background-blend-mode: multiply;
+    }
+
+.kr-city-card__body-row__col-2 {
+  flex-direction: column;
+  justify-self: flex-end;
+  max-width: 12%;
+  /* border: 1px dashed white; */
+}
+
+  .kr-city-card__body-library-row {
+    height: 35%;
+  }
+
+    #krCityLibraryBtn {
+      height: 105%;
+      border-radius: 1.25rem;
+      border: .25rem double rgb(255, 0, 162);
+      background-color: rgba(0,0,0,.25);
+    }
+
+    #krCityLibraryBtn:hover {
+      border-color: white;
+      background-color: rgba(255,255,255,.15);
+      background-blend-mode: multiply;
+    }
+
+.kr-city-card__body-row__col-3 {
+  max-width: 33%;
+  /* border: 1px dashed cyan; */
+}
+
+.kr-city-card__body-row__col-4 {
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 12%;
+  /* border: 1px dashed pink; */
+}
+
+  .kr-city-card__body-acadoke-row {
+    height: 50%;
+  }
+
+    #krCityAcademyBtn {
+      height: 49%;
+      border-radius: 1.25rem;
+      border: .25rem double rgb(255, 230, 0);
+      background-color: rgba(0,0,0,.25);
+    }
+
+    #krCityAcademyBtn:hover {
+      border-color: white;
+      background-color: rgba(255,255,255,.15);
+      background-blend-mode: multiply;
+    }
+
+    #krCityKaraokeBtn {
+      height: 48%;
+      border-radius: 1.25rem;
+      border: .25rem double rgb(255, 60, 0);
+      background-color: rgba(0,0,0,.25);
+    }
+
+    #krCityKaraokeBtn:hover {
+      border-color: white;
+      background-color: rgba(255,255,255,.15);
+      background-blend-mode: multiply;
+    }
+
+/* K-Arcade - Collection */
+.kr-collection-card {
+  height: 100%;
+  width: 100%;
+}
+
+.kr-collection-card__body {
+  flex-direction: row;
+  background: no-repeat center 
+              url("https://sabio-training.s3-us-west-2.amazonaws.com/immersed36bb1fa5-8624-4841-b88d-e1c4a44f7c80/KArcadeCollection.jpg");
+  background-size: 100% 100%;
+}
+
+  .kr-collection-card__col-t1 {
+    max-width: 10%;
+  }
+
+    .kr-collection-card__col-t1-row {
+      height: 22.5%;
+      width: 83%;
+      margin: 1rem;
+      overflow: hidden;
+    }
+
+  .kr-collection-card__col-t2 {
+    max-width: 10%;
+  }
+
+    .kr-collection-card__col-t2-row {
+      height: 35%;
+      width: 83%;
+      margin: 1rem;
+      overflow: hidden;
+    }
+
+    .kr-collection-card__col-t2-row-2 {
+      height: 22%;
+      width: 83%;
+      margin: 1rem;
+      overflow: hidden;
+    }
+
+/* K-Arcade - GameZone */
+.kr-gamezone-card {
+  background: no-repeat center 
+              url("https://sabio-training.s3-us-west-2.amazonaws.com/immersed9eea26c9-5e7c-4921-a1ae-a9eb7f3ba932/KArcadeGameZone.jpg");
+  background-size: 103% 102%;
+  border: .35rem solid rgb(0, 255, 102);
+}
+
+  .kr-gamezone-card__row-filler {
+    width: 100%;
+    height: 21%;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, 
+                    rgba(255, 255, 255, .05), 
+                    rgba(0, 0, 0, .75));
+    clip-path: polygon(0 0, 101% 0, 73.25% 100%, 28.75% 100%);
+  }
+
+  .kr-gamezone-card__row-top {
+    width: 100%;
+    height: 44%;
+  }
+
+    #gameZoneFillColTop {
+      z-index: 1;
+      position: relative;
+      min-width: 28.25%;
+      top: -50%;
+      height: 300%;
+      background-image: linear-gradient(to right, 
+                      rgba(255, 255, 255, .05), 
+                      rgba(0, 0, 0, .75));
+      clip-path: polygon(0 1%, 100% 16.55%, 100% 50%, 0 76%);
+    }
+
+    .kr-gamezone-card__row-top__col-main {
+      z-index: 1;
+      position: relative;
+      min-width: 44.25%;
+      height: 100%;
+      border: .5rem double rgba(255,255,255,.5);
+      background-image: radial-gradient(
+                      rgba(255, 255, 255, .35), 
+                      rgba(255, 255, 255, .15));
+    }
+
+      #gameZoneContent {
+        justify-content: space-evenly;
+        position: relative;
+        left: calc(.25rem - 1px);
+        height: 100%;
+        border-radius: .5rem;
+        border: .25rem double rgba(255, 255, 255, .5);
+        background-color: rgba(255, 255, 255, .15);
+      }
+
+    #gameZoneFillColTop2 {
+      z-index: 1;
+      position: relative;
+      top: -50%;
+      height: 300%;
+      background-image: linear-gradient(to left, 
+                      rgba(255, 255, 255, .05), 
+                      rgba(0, 0, 0, .75));
+      clip-path: polygon(0 16.55%, 105% 0, 100% 76%, 0 50%);
+    }
+
+  .kr-gamezone-card__row-bottom {
+    width: 100%;
+    height: 35%;
+    background-image: linear-gradient(to top,
+                     rgba(255, 255, 255, .25), 
+                     rgba(0, 0, 0, .75));
+    clip-path: polygon(28.25% 0, 72.25% 0, 100.75% 100%, 0 100%);
+  }
+
+/* KArcade - Memory Game */
+
+  .kr-basic-memory-card {
+    border-radius: 0;
+    /* border: .2rem solid rgba(255, 255, 255, .35); */
+    background-color: transparent;
+    width: 4rem;
+    height: 4rem;
+    perspective: 1000px;
+    box-shadow: 
+      0 0 1rem .25rem rgba(0,0,0,.25);
+  }
+
+    .kr-basic-memory-card-body {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+      .kr-basic-memory-image {
+        height: 100%;
+        width: 100%;
+      }
+
+      .kr-basic-memory-card:active .kr-basic-memory-card-body, .kr-basic-memory-card:focus .kr-basic-memory-card-body {
+      transform: rotateY(180deg);
+      outline: .25rem solid black;
+    }
+
+      .kr-basic-memory--front, .kr-basic-memory--back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        font-size: 2rem;
+        font-weight: bolder;
+      }
+
+      .kr-basic-memory--front:hover, .kr-basic-memory--back:hover {
+        cursor: pointer;
+      }
+
+      .kr-basic-memory--back {
+        background-color: white;
+        transform: rotateY(180deg);
+      }

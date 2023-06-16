@@ -1,0 +1,63 @@
+.terminal {
+  width: 600px;
+  height: 400px;
+  border-radius: 6px;
+  box-shadow: 0px 12px 12px 12px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+
+  background-color: rgb(43,48,59);
+  color: rgb(192, 197, 206);
+}
+
+.terminal-topbar {
+  position:absolute;
+  display:flex;
+  background: rgb(43,48,59);
+  height: 20px;
+  width:580px;
+  padding: 5px;
+}
+
+.terminal-button {
+  margin-left: 6px;
+  height: 9px;
+  width: 9px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.terminal-button--close { background-color: rgb(255, 98, 90); }
+.terminal-button--min { background-color: rgb(254, 192, 46); }
+.terminal-button--max { background-color: rgb(43, 207, 66); }
+
+.terminal-content {
+  padding: 10px;
+  margin-top:20px;
+  text-align: left;
+}
+
+.command {
+  font-family: monospace;
+  font-size: 1em;
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.terminal-input {
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-family: monospace;
+  font-size: 1em;
+  text-align: left;
+  outline: none;
+  color: rgb(192, 197, 206);
+}
+
+.terminal-container{
+  display:flex;
+  justify-content: center;
+}

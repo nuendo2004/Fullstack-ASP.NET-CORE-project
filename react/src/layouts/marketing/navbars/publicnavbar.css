@@ -1,0 +1,14 @@
+.public-nav-bar {
+    position: sticky;
+    top: 0;
+}
+#navLogo {
+    height: 65px;
+}
+
+.navbar-simplebar {
+    height: 300px;
+}
+#traineeSwitch {
+    display: none;
+}

@@ -1,0 +1,65 @@
+.ztkr_mainframe {
+}
+.ztkr_avatar {
+  width: 100%;
+}
+.ztkr_avatarframe {
+  border-radius: 100px;
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+
+  margin-right: 16px;
+  border: 4px solid rgb(255, 254, 254);
+}
+.ztkr_traineecardframe {
+  margin: 16px 0;
+}
+.ztkr_traineecard {
+  box-shadow: 0 1px 6px 1px #aaa9a9;
+  border-radius: 10px;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+
+  transition: all 100ms;
+}
+.ztkr_traineecard:hover {
+  cursor: pointer;
+}
+.ztkr_traineecard:hover .ztkr_avatarframe {
+  border-color: rgb(144, 62, 211);
+}
+.ztkr_traineecard:hover .ztkr_name {
+  color: rgb(144, 62, 211);
+}
+.ztkr_name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.3rem;
+  cursor: default;
+}
+.ztkr_mainframe p {
+  margin: 0;
+}
+
+.ztkr_flexcenter {
+  display: flex;
+  align-items: center;
+}
+
+/*+++++++++++++++++ animation +++++++++++++++++++*/
+
+/*+++++++++++++++++ desktop view ++++++++++++++++++*/
+.ztkr_traineecard {
+  max-width: 738px;
+  margin: auto;
+}
+@media screen and (min-width: 1024px) {
+  .ztkr_traineecard:hover {
+    box-shadow: 0 4px 10px 4px #a8a8a8;
+    transform: scale(105%);
+
+    cursor: pointer;
+  }
+}

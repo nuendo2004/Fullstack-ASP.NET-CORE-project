@@ -1,0 +1,62 @@
+.traceability-card {
+    margin-top: 1.15%;
+}
+
+.table-events-header {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .75rem;
+}
+
+.table-traceability-text {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .75rem;
+}
+
+.event-info-btn {
+    margin-left: 1%;
+}
+
+.brSmall-event {
+    display: block;
+    margin-bottom: .75em;
+}
+
+.traceability-table {
+    border-radius: 20px;
+    height: 244px;
+    padding: 0 10px 10px 10px;
+    overflow: auto;
+}
+
+.traceability-table-header {
+    position: sticky;
+}
+
+.traceability-card-background {
+    border-radius: 5px;
+    height: 350px;
+    padding: 2px 2px 2px 2px;
+    overflow: auto;
+}
+
+.no-record-title {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .75rem;
+}
+
+.no-record-image {
+    height: 300px;
+    width: 300px;
+}
+
+.trainee-switch-button {
+    position: fixed;
+    padding-right: 100px;
+    font-size: 11px;
+}

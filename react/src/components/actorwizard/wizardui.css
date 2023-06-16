@@ -1,0 +1,69 @@
+.actor-form-text {
+   justify-content: center;
+}
+
+.actor-loki-form {
+    width: 100%;
+}
+
+.actor-form-header {
+    text-align: center;
+}
+
+.LokiSteps {
+    margin-top: 40px;
+}
+
+.actor-card {
+    width: 100%;
+    margin-top: 80px;
+    margin-right: 0;
+}
+
+.actor-account-card {
+    height: max-content;
+    width: 50%;
+}
+
+.Loki-Actions {
+    margin-top: 10px;
+}
+
+.Loki-Actions .finish-btn {
+    padding-right: -2px;
+}
+
+.actor-form-loki {
+    margin: 0;
+}
+
+F
+.actor-account-submit {    
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 0;
+    
+}
+
+
+@media screen and (min-width: 390px) and (max-width: 767px) 
+{
+    
+    .actor-form-text {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1093px)
+{
+    .actor-form-text {
+        justify-content: center;
+    }
+
+    .actor-col-form {
+        margin-bottom: 200px;
+    }   
+    
+}

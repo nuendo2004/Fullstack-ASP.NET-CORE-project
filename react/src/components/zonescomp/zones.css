@@ -1,0 +1,98 @@
+.zones-card-buttons {
+  padding: 1%;
+  height: 10%;
+  width: 45%;
+  margin: 2.5%;
+  border-radius: 10%;
+}
+
+.zones-card-button-update {
+  padding: 1%;
+  height: 50%;
+  width: 100%;
+  margin: 1%;
+  border-radius: 5%;
+  font-size: 14px;
+}
+
+.zone-card-css {
+  padding: 15px;
+  text-align: center;
+  align-self: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+.zones-resperpage {
+  margin: 12px;
+}
+
+.zones-card-icon {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.zones-rowstyle {
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.zones-mrg-0 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.zones-colstyle {
+  height: fit-content;
+}
+
+.zones-card-icon-button {
+  width: 30%;
+  height: 30%;
+  object-fit: cover;
+}
+.zones-cardtitle {
+  font-size: large;
+}
+
+.zones-button-add-pagesize {
+  margin: 0px;
+  padding: 0px;
+  padding-right: 12px;
+}
+.zones-button-add {
+  text-align: right;
+  align-items: center;
+  margin: 10px;
+  margin-left: 0px;
+}
+
+.zone-card-select-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+.zone-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+.zone-card-title {
+  font-size: 12px;
+}
+
+.zone-card-body-up {
+  height: 150px;
+}
+
+.zones-pagination-buttons-bottom {
+  margin: auto !important;
+}
+
+.zones-btn-go-back {
+  margin-left: 10px;
+}

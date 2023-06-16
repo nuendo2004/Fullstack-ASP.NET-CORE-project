@@ -1,0 +1,45 @@
+
+.traineeposition2{
+position:fixed;
+top: 300px;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+
+.traineeposition1{
+
+    top: 300px;
+    left: 50%;
+    bottom: 300px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    }
+
+.error-required{
+    width:100%;
+    font-size: 80%;
+    color:brown;
+}
+
+.margindistance{
+    margin: 15px;
+
+}
+
+.div1 {
+    display: inline-block;
+    width:120px;
+    height:120px;
+    border: 1px solid red;
+}
+.div2 {
+    display: inline-block;
+    }
+
+.right {
+    float: right;
+    
+    border: 3px;
+    padding: 10px;
+  }

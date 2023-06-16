@@ -1,0 +1,26 @@
+.jobsettings-loki-form,
+.jobrecipient-loki-form {
+  width: 100%;
+}
+
+.jobsettings-form-header,
+.jobrecipient-form-header {
+  text-align: center;
+}
+
+.job-Loki-Actions {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+  .form-text {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1093px) {
+  .form-text {
+    justify-content: center;
+  }
+}

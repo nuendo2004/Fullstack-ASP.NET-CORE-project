@@ -1,0 +1,116 @@
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+variables:
+  isNodeEnabled: ${{ true }} # case insensitive, so True or TRUE also works
+  isDotNetEnabled: ${{ true }}
+  isTestsDotNetEnabled: ${{ false }}
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+pr:
+- master
+- Themed-A
+- Themed-B
+- Themed-Xtreme
+- Themed-Architect
+trigger:
+- master
+pool:
+  vmImage: 'windows-latest'
+stages:
+- stage: Node_Tasks
+  dependsOn: [] 
+  jobs:
+  - job: NodeBuild
+    steps:
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '10.x'
+      displayName: 'Install Node.js'
+      continueOnError: false
+      condition: and(succeeded(), eq('${{ variables.isNodeEnabled }}', true))
+    - task: Npm@1
+      inputs:
+        command: 'install'
+        workingDir: 'node'
+      displayName: "Install Modules"
+      condition: and(succeeded(), eq('${{ variables.isNodeEnabled }}', true))
+    - task: Npm@1
+      inputs:
+        command: 'custom'
+        workingDir: 'node'
+        customCommand:  run lint
+      continueOnError: false
+      displayName: "Linting Application"
+      condition: and(succeeded(), eq('${{ variables.isNodeEnabled }}', true))
+    - task: Npm@1
+      inputs:
+        command: 'custom'
+        workingDir: 'node'
+        customCommand:  run babel-app-q
+      continueOnError: true
+      displayName: "Compile App"
+      condition: and(succeeded(), eq('${{ variables.isNodeEnabled }}', true))
+    - task: CmdLine@2
+      inputs:
+        script: |
+          SET LAUNCH_HTTPS=false 
+          SET ENV_TYPE=azure
+      displayName: "Preparing to Launch"
+      condition: and(succeeded(), eq('${{ variables.isNodeEnabled }}', true))
+    - task: Npm@1
+      inputs:
+        command: 'custom'
+        workingDir: 'node'
+        customCommand:  run spinup-die
+      continueOnError: true
+      displayName: "Launching & Killing"
+      condition: and(succeeded(), eq('${{ variables.isNodeEnabled }}', true))
+- stage: Dot_Net_Tasks
+  dependsOn: []    # this removes the implicit dependency on previous stage and causes this to run in parallel
+  jobs:
+    - job: DotNetBuild
+      steps:
+      - task: NuGetToolInstaller@1
+        displayName: "Nuget Install"
+        condition: and(
+          succeeded(), 
+          eq('${{ variables.isDotNetEnabled }}', true)
+          )
+      - task: NuGetCommand@2
+        inputs:
+          restoreSolution: '$(solution)'
+        displayName: "DotNet Restore"
+        condition: and(
+          succeeded(), 
+          eq('${{ variables.isDotNetEnabled }}', true)
+          )
+      - task: VSBuild@1
+        inputs:
+          solution: '$(solution)'
+          msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactStagingDirectory)"'
+          platform: '$(buildPlatform)'
+          configuration: '$(buildConfiguration)'
+        displayName: "DotNet MS Build"
+        condition: and(
+          succeeded(), 
+          eq('${{ variables.isDotNetEnabled }}', true)
+          )
+      - task: VSTest@2
+        inputs:
+          platform: '$(buildPlatform)'
+          configuration: '$(buildConfiguration)'
+        displayName: "DotNet Tests"
+        condition: and(
+          succeeded(), 
+          eq('${{ variables.isDotNetEnabled }}', true),
+          eq('${{ variables.isTestsDotNetEnabled }}', true)
+          )
+- stage: React_Tasks
+  dependsOn: [] 
+  jobs:
+  - job: ReactBuild
+    steps:
+    - script: yarn --cwd %System_DefaultWorkingDirectory%\react install 
+      displayName: 'React Install via Yarn'
+    - script: cd react && dir && yarn build
+      displayName: 'React Building'

@@ -1,0 +1,17 @@
+.survey-grid-card {
+  min-height: 350px;
+  max-height: 350px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.survey-list-card {
+  background-image: url("../../assets/images/background/project-cover-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.survey-pointer {
+  cursor: pointer;
+}

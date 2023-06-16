@@ -1,0 +1,61 @@
+.comment-card .card-img-top {
+  width: 2.2vw;
+  height: 1.75vw;
+  padding-right: 5px;
+  border-radius: 50%;
+}
+.comment-card {
+  padding-bottom: 20px;
+}
+
+.comment-card .comment-reply {
+  padding-left: 50px;
+}
+
+.comment-container {
+  padding-left: inherit;
+}
+
+.comment-card .comment-btn {
+  padding-bottom: inherit;
+}
+
+.comment-card .btn {
+  --bs-btn-line-height: .3;
+}
+
+p.comment-text {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+input.form-control {
+  width: 75%;
+}
+
+.comment-form textarea.form-control {
+  width: 1000px;
+}
+
+p.comment-date {
+  float: right;
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+
+.comment-card svg.dlt-comment-btn {
+  margin-left: 10px;
+}
+
+.comment-card .edit-form {
+  display: contents
+}
+
+
+.reply-form textarea.form-control {
+  width: 600px;
+}
+
+.edit-form textarea.form-control {
+  width:600px;
+}

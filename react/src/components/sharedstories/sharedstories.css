@@ -1,0 +1,180 @@
+sharedStories-body {
+    background-color: white;
+    margin-bottom: 150px;
+}
+
+.storyForm-title {
+    margin-top: 50px;
+    margin-left: 165px;
+}
+
+.form-description {
+    color: #754FFE !important;
+    margin-left: 165px;
+    margin-bottom: 0px;
+    
+}
+
+.sharedStories-row {
+    background-color: #c2e4f8;
+    border-radius: 25px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-bottom: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.shared-heading {
+    text-align: center;
+    font-weight: bold;
+    font-family:'Gotham SSm A','Gotham SSm B',Arial,sans-serif ;
+    display: block;
+}
+
+.para-description {
+    text-align: center;
+}
+
+.story-card-body {
+    height: 100% !important;
+}
+
+.story-form {
+    position: relative;
+    bottom: 50px;
+    height: 825px;
+    padding-left: 125px;
+    margin-top: 50px;
+
+}
+
+.sharedStories-form-label {
+    font-family: 'Gotham SSm A','Gotham SSm B',Arial,sans-serif;
+    font-weight: bold;
+}
+
+.sharedStory-fieldDescription {
+    font-size: .5em;
+}
+
+.share-story {
+    text-align: center;
+}
+
+.story-title {
+    padding-top: 15px;
+}
+
+.share-title {
+    width: 500px;
+}
+
+.stry-title-val {
+    color: red;
+}
+
+.share-email {
+    width: 500px;
+}
+
+.stry-email-val {
+    color: red;
+}
+
+.addStory-label {
+    margin-left: -9px;
+}
+
+.ck-toolbar_grouping {
+    width: 500px !important;
+    margin-left: -5px !important;
+}
+
+.ck-rounded-corners {
+    height: 175px !important;
+    width: 500px !important;
+    display: grid !important;
+    margin-left: -5px !important;
+}
+
+.story-textbox {
+    width: 500px;
+    height: 265px;
+    margin-right: 0px;
+    padding: 10px 10px 0px 10px !important;
+}
+
+.story-error-msg {
+    position: relative;
+    bottom: 15px;
+    width: 500px;
+    color: red;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+}
+
+.sh-story-file-btn {
+    font-style: italic;
+    width: 500px;
+    height: 140px;
+    padding: 0px 0px 0px 0px;
+}
+
+.story-img-thumbnail {
+    position: relative;
+    bottom: 95px;
+    right: 168px;
+    height: 75px;
+    width: 100px;
+}
+
+.story-videoImg-thumbnail {
+    width: 100px;
+    height: 75px;
+    position: relative;
+    right: 168px;
+    bottom: 168px;
+}
+
+.share-checkbox {
+    padding-left: 0px;
+}
+
+.stry-chkbx-msg {
+    color: red;
+}
+
+.sh-story-btn {
+    width: 240px;
+    position: relative;
+    left: 135px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.preview-story-cd {
+    position: relative;
+    left: 1035px;
+    bottom: 840px;
+    width: 550px;
+    height: 750px !important;
+}
+
+.storycreatepg {
+    height: 100%;
+    background-image: linear-gradient(#FFE0E0 0%, #DBBEFF 48.96%, #BAA9FB 100%);
+    
+}
+
+.story-form-col {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.story-media-icons {
+    display: flex;
+    align-items: center !important;
+    margin-top: 50px !important;
+    margin-left: 188px;
+}

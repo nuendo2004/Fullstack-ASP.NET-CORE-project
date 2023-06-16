@@ -1,0 +1,60 @@
+
+.avatar_container{
+    width : 100%;
+    height : 100%;
+    position: relative;
+    margin: auto;
+}
+.avatar_slide{
+    width: 100%;
+    height:100%;
+    border-radius: 10px;
+    display:block
+}
+
+.leftArrow_style,
+.rightArrow_style {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.rightArrow_style{
+    right : 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.leftArrow_style:hover,
+.rightArrow_style:hover{
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+.avatar_button_submit {
+    border-color: dodgerblue;
+    color: dodgerblue;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 14px;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+    margin: auto;
+    display:block;
+    width: 25%;
+    margin-top: 15px;
+}
+.avatar_button_submit:hover{
+    background: #2196F3;
+    color: white;
+}

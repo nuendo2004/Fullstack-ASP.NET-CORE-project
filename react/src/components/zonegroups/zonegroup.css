@@ -1,0 +1,15 @@
+.zonegroup-card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.carousel-zonegroup-img {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+}
+
+.bg-light-purple {
+    background-color: #e3dcff;
+}

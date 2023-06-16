@@ -1,0 +1,199 @@
+
+.org-loki-container {
+    height: 70em;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.Loki {
+
+    height: 80em;
+}
+
+.LokiSteps {
+    width: 100%;
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    text-align: center;
+    vertical-align: middle;
+    border-collapse: separate;
+    margin-left: 0px;
+    padding-left: 0;
+    padding-top: 20px;
+}
+
+.Loki-Actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-right: 40px;
+}
+
+.Loki-Actions button {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-left: 1rem;
+
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+
+    width: 4.5rem;
+    height: 3rem;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    height: 70em;
+}
+
+.actor-review-card {
+    text-align: center;
+    height: 45em;
+}
+
+.review-actor-img {
+    height: 300px;
+}
+
+
+.Loki-Actions .back-btn {
+    width: 8rem;
+    margin-right: 1rem;
+}
+
+.Loki-Actions .btn-finish {
+    padding-right: 4em;
+}
+
+.loki-Actions .finish-btn {
+    padding-right: -2px;
+}
+
+.Loki-Actions button:focus,
+.Loki-Actions button:active:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.Loki-Actions button:hover,
+.Loki-Actions button:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+.Loki-Actions button:active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.LokiSteps .LokiStep {
+    display: table-cell;
+    position: relative;
+    float: none;
+    padding: 0;
+    width: 1%;
+}
+
+.LokiSteps .LokiStep .LokiStep-Icon {
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-size: 26px;
+    height: 64px;
+    margin: 0 auto;
+    position: relative;
+    width: 64px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LokiSteps .LokiStep .LokiStep-Link.disabled {
+    cursor: not-allowed;
+}
+
+.LokiSteps .LokiStep.LokiStep-Active .LokiStep-Icon {
+    border-color: #75b2f5;
+    color: #75b2f5;
+}
+
+.LokiSteps .LokiStep.LokiStep-Complete .LokiStep-Icon {
+    border-color: #05ae0e;
+    color: #05ae0e;
+}
+
+.LokiSteps .LokiStep:after {
+    left: 50%;
+    background-color: #ccc;
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    width: 100%;
+    top: 35px;
+}
+
+.LokiSteps .LokiStep:last-child:after {
+    display: none;
+}
+
+.has-error {
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.col-form {
+    margin-top: 0;
+}
+
+@media only screen and (min-width: 600px) {
+    .org-loki-container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .first-btns {
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+
+@media only screen and (min-width: 992px) {
+    .org-loki-container {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .org-loki-container {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}

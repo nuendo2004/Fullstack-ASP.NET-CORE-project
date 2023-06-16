@@ -1,0 +1,24 @@
+
+
+.bg-style-herotype{
+    background-image: url("../../assets/images/background/immersedback.jpg")!important;
+    background-repeat: no-repeat;   
+    background-size:  cover;
+    background-Position: top center;
+}
+
+.text-wh p, div .mt-4 h3, div.col-lg-8 h2.mb-2{
+    color: white;
+}
+
+.bg-style-footerland{
+    background-image: url("../../assets/images/background/immersedred.jpg")!important;
+    background-repeat: no-repeat;   
+    background-size:  cover;
+    background-Position: top center;
+}
+
+
+
+
+

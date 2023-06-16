@@ -1,0 +1,14 @@
+.channel-graph{
+    height: 400px;
+    
+}
+
+.channel-graph-body{
+    overflow: auto;
+}
+
+.graph-card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,58 @@
+.faqs-accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .faqs-active-tab, .accordion:hover {
+    background-color: rgb(204, 204, 204);
+  }
+  
+  .faqs-panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
+  .faqs-banner-style {
+    height: 50px;
+  }
+
+  .faqs-banner-style2 {
+    height: 20px;
+  }
+
+  .faq-btn {
+    background-color: red; /* Green */
+    border: bluevio;
+    color: rgb(226, 30, 164);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+   .faq-btn:nth-child(even) {
+    background-color: pink;
+  } 
+  
+  .faq-btn :active,
+  .active {
+    top: 2px;
+    left: 1px;
+    box-shadow: blue;
+    color: rgb(226, 30, 164)
+    
+  }
+
+button.faq-btn {
+  background-color: pink;
+}

@@ -1,0 +1,54 @@
+.internal-analytics-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.internal-analytics-card-header-evenly {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.internal-analytics-centered-title {
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+.internal-analytics-company-logo-header {
+    width: 100px;
+    height: 100px;
+    margin-right: 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.internal-analytics-dashboard-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.internal-analytics-dashboard-header {
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.internal-analytics-number-display {
+    font-weight: bold;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+.internal-analytics-title {
+    margin-bottom: 0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}

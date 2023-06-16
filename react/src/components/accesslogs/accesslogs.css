@@ -1,0 +1,61 @@
+  .access-logs-start-date {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  .access-logs-end-date {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  .access-logs-search-bar {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  .access-logs-pagination { 
+    text-align: center;
+    position: relative;
+    justify-content: center;
+  }
+
+  .access-logs-button-left {
+   flex-shrink: 0;
+   display: flex;
+  }
+
+  .access-logs-button-right {
+   display: flex;
+   flex-shrink: 0;
+  }
+
+  .access-logs-dropdown-right {
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+
+  .access-logs-dropdown-left {
+    padding-left: 33px;
+    padding-right: 0px;
+  }
+
+  .access-status {
+    padding-left: 0px;
+  }
+
+  .vertical-container {
+    margin: auto;
+    position: relative;
+    text-align: center;
+  }
+
+  .access-log-text-left {
+    padding-right: 75px;
+  }
+  
+  .access-log-text-right {
+    padding-right: 95px;
+  }

@@ -1,0 +1,109 @@
+.blog-page-container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.blogtitle-approve {
+    color: #754FFE; 
+    font: sans-serif;
+    font-Weight: bold; 
+    text-Decoration-Line: underline
+}
+
+
+
+.blog-card {
+ background: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    height: 38rem;
+    max-height: 900px;
+    margin: 1rem;
+    position: relative;
+    width :30rem;
+    max-width: 400px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.19), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.2s ease-in-out;
+    border: 2px solid #754FFE;
+}
+
+.blog-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.blog-page {
+    max-width: dimensions-get('window-width');
+    flex: auto;
+    flex-direction: row;
+}
+
+.blogcard-subject {
+    text-align-last: center;
+    font-weight: auto;
+    height: auto;
+    max-height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+}
+
+.blogcard-content {
+    text-align-last: center;    
+    font-weight: auto;
+    overflow: hidden;
+    height: 30rem;
+    max-height: 90px;
+    text-overflow: ellipsis;
+}
+
+.blogcard-container {
+    background-color: #fff;
+    height: 30rem;
+    max-height: 550px;
+    margin: 1rem;
+    position: relative;
+    width: 28rem;
+    max-width: 400px;    
+}
+
+.blogcard-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+
+.container-toggle {
+    align-content: center;
+}
+
+.toggle-style{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blog-approv-text {
+    text-align: end;
+    text-shadow: 0 8px 16px rgba(136, 76, 241, 0.2), 0 6px 20px rgba(146, 83, 247, 0.423);
+    font-weight: bold;
+    font-size: .8rem;
+    color: #754FFE;
+}
+
+.blog-card-title {
+    text-align: center;
+    font-weight: bold;
+    font: sans-serif;
+    color: black;
+}
+
+.check-label {
+    margin-left: .5rem;
+    font-weight: bold;
+    font: sans-serif;
+    color: #754FFE;
+    font-size: .8rem;
+}
+
+

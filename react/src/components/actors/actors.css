@@ -1,0 +1,161 @@
+
+.current-text {
+  display: flex-start;
+}
+
+
+.actor-card-img-top {
+  width: 325px;
+  height: 325px;
+  object-fit: fill;
+}
+
+.actor-card {
+  margin-right: 10px;
+}
+
+.add-actor {
+  height: 30px;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+
+.ipad-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.ipad-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.search-bar-actors {
+  display: flex-end;
+}
+
+.actor-search-input {
+    width: 50%;
+  height: 40px;
+}
+
+.actor-form-row {
+    display: flex;
+}
+
+.actor-form-col {
+  display: flex; 
+  justify-content: flex-end;
+}
+
+.modal-card-img-top {
+  display: flex;
+  margin: auto;
+  width: 325px;
+  height: 325px;
+  margin-bottom: 20px;
+}
+
+.actor-modal-btn {
+  width: 100%;
+}
+
+.actor-modal-btn-row {
+  width: 50%;
+  margin:auto;
+
+}
+
+
+
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+  .actor-card .actor-card-img-top {
+    height: 80vw;
+  }
+  .current-text {
+    display: flex;
+    justify-content: center;
+  }
+
+  .current-text-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .actor-form-col {
+    display: flex;
+    justify-content: center;
+}
+.modal-button {
+  display: inline;
+  color: white;
+  height: 38px;
+  width: 100px;
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1093px) {
+  .flex-test {
+    display: flex;
+    flex-direction: column;
+  }
+  .current-text {
+    display: flex;
+    justify-content: center;
+  }
+  .actor-card-column {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .actor-body {
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
+
+  .actor-card-img-top {
+    width: 500px;
+    height: 500px;    
+  }
+
+  .ipad-row {
+    width: inherit;
+    display: flex;
+    margin: 0;
+  }
+  
+  .ipad-btn {
+    width: 100%;
+  }
+
+  .add-actor {
+    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+  }
+
+  .current-text {
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  .current-text-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .actor-form-col {
+    display: flex;
+    justify-content: center;
+}
+
+}

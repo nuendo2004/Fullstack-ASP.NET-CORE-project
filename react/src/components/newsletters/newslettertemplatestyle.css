@@ -1,0 +1,13 @@
+.newsletter-template {
+  text-align: center;
+}
+
+.newsletter-template-image {
+  border-radius: 10px;
+  background-position: left top;
+  background-repeat: repeat;
+  max-width: 80%;
+  max-height: 20vw;
+  object-fit: contain;
+  margin-top: 20px;
+}

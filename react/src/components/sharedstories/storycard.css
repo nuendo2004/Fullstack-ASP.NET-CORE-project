@@ -1,0 +1,161 @@
+.stories-align-items-stretch {
+  margin: 5%;
+  padding-left: 15%;
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stories-pagination {
+  display: flex;
+  float: right;
+  padding-right: 20%;
+}
+
+h2.stories-mb-1 {
+  text-align: center;
+}
+
+p.stories-mb-0 {
+  text-align: center;
+  padding-bottom: 3%;
+}
+h1.stories-display-4 {
+  text-align: center;
+}
+.stories-approval-heading {
+  text-align: center;
+  font-size: 200%;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(153, 0, 0);
+}
+
+.story-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.storiescard-card {
+  margin-left: 2%;
+  max-height: 450px;
+  height: 450px;
+  width: 250px;
+  border: solid;
+  justify-self: center;
+  justify-items: center;
+  overflow: hidden;
+  border-color: rgb(153, 0, 0);
+  transform: rotatex(0deg);
+  transform: rotatez(0deg);
+  transition: 0.6s;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+.storiescard-body {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding-top: 12%;
+}
+
+.story-image {
+  min-height: 162px;
+}
+.story-text-right {
+  text-align: right;
+}
+.sharedstory-bg-image {
+  background-image: url("../../assets/images/background/immersedvertical.jpg");
+}
+
+.shared-story-align-items-center {
+  flex: content;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 2%;
+  color: rgb(233, 230, 230);
+}
+
+.story-justify-content-between {
+  padding-bottom: 5%;
+
+  background-image: linear-gradient(
+    -60deg,
+    rgb(75, 4, 4) 50%,
+    rgb(110, 114, 118) 50%
+  );
+  bottom: 0;
+  left: -50%;
+  opacity: 0.8;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.story-approve {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.story-author {
+  padding-top: 15%;
+  padding-bottom: 2%;
+}
+.storiescard-title {
+  text-align: center;
+  font-weight: bolder;
+}
+.storiescard-flippedCard {
+  margin-left: 2%;
+}
+.stories-display-4 {
+  color: rgb(244, 235, 235);
+}
+
+.storiesCard-edit-btn {
+  float: left;
+  padding-right: 2%;
+}
+
+.storiesCard-approve-btn {
+  float: right;
+}
+.single-story-frame {
+  width: 600px;
+  height: 430px;
+  border: 3px solid black;
+  background-color: whitesmoke;
+  margin: auto;
+  padding: 15px 10px;
+}
+
+.story-background {
+  background-image: linear-gradient(
+    -60deg,
+    rgb(75, 4, 4) 50%,
+    rgb(110, 114, 118) 50%
+  );
+  bottom: 0;
+  left: -50%;
+  opacity: 0.8;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.story-title-align-items-center {
+  color: white;
+  text-align: center;
+}
+.single-story {
+  color: white;
+}
+.storycard-body {
+  float: right;
+}

@@ -1,0 +1,18 @@
+.zone-card-img {
+  height: 250px;
+}
+.zone-card-body{
+  height: 156px
+}
+
+.transit-zone-card{
+  width: 80%;
+  display: inline-block
+}
+
+.transit-zone-carousel-container{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}

@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+     <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Security\SecurityStringExtensions.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.S3" Version="3.7.103.37" />
+    <PackageReference Include="AWSSDK.S3Control" Version="3.7.108.9" />
+    <PackageReference Include="BCrypt-Core" Version="2.0.0" />
+    <PackageReference Include="Google.Apis.Analytics.v3" Version="1.60.0.1679" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+    <PackageReference Include="Quartz" Version="3.6.2" />
+    <PackageReference Include="Quartz.Extensions.DependencyInjection" Version="3.6.2" />
+    <PackageReference Include="Quartz.Extensions.Hosting" Version="3.6.2" />
+    <PackageReference Include="Stripe.net" Version="41.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sabio.Data\Sabio.Data.csproj" />
+    <ProjectReference Include="..\Sabio.Models\Sabio.Models.csproj" />
+  </ItemGroup>
+
+</Project>
